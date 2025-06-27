@@ -11,16 +11,16 @@ def get_book_text(file_path):
 def main():
     try:
         book_input = sys.argv[1] # Gets the path to the book
+        book_text = get_book_text(book_input)
     except IndexError:
         with open("README.md") as readme:
             msg = readme.read()
             print(msg)
             sys.exit(1)
     except FileNotFoundError:
-        print("The file has not been found.")
+        print("404 The file not been found.")
         sys.exit(1)
 
-    book_text = get_book_text(book_input)
 
     num_words = count_words(book_text)
     char_dict = character_count(book_text)
