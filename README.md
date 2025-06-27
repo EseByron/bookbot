@@ -12,7 +12,7 @@ BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
 2. **Run the program:**
     in bash:
-    Usage: python3 main.py <path_to_book>
+    python3 main.py <path_to_book>
     
 3. **View the results:**  
     BookBot will analyze the text file and display statistics such as word counts and character frequencies.
